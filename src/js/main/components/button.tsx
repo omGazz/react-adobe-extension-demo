@@ -5,7 +5,6 @@ type ButtonProps = {
   onClick: () => void;
 };
 
-//TODO: Fix this, it's not working on press but if I use a normal button it works
 const DcButton = ({ text = "placeholder", onClick }: ButtonProps) => {
   return (
     <Button variant="cta" onPress={onClick}>
@@ -13,13 +12,5 @@ const DcButton = ({ text = "placeholder", onClick }: ButtonProps) => {
     </Button>
   );
 };
-
-// const DcButton = ({ text = "placeholder", onClick }: ButtonProps) => {
-//     return (
-//             <button
-//             onClick={onClick}
-//             >{text}</button>
-//     );
-// }
 
 export default DcButton;
