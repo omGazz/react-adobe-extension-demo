@@ -17,7 +17,7 @@ const ColorPicker: React.FC = () => {
     const rgbColor = hexToRgb(color);
 
     if (!rgbColor) return;
-ß
+
     const script = `
       if (app.documents.length > 0) {
         var doc = app.activeDocument;
